@@ -30,7 +30,6 @@ Route::middleware(['auth:sanctum', 'verified', 'check_babinsa'])->group(function
     Route::get('/laporan/{laporan}', [LaporanController::class, 'show'])->name('laporan.show');
     // Tambahkan rute-rute lainnya di sini...
 });
-<<<<<<< HEAD
 
 Route::get('/profile', function () {
     return view('profile');
@@ -139,5 +138,3 @@ Route::get('/tambah-baksos', [BaksosController::class, 'index'])->name('baksos.i
 
 });
 
-=======
->>>>>>> 5090c0447caae7f45ee8ac1ff39bfcedcf2ce4a7

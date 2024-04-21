@@ -30,7 +30,6 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-<<<<<<< HEAD
             \App\Http\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
@@ -39,17 +38,6 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
           
         ],
-=======
-    \App\Http\Middleware\EncryptCookies::class,
-    \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-    \Illuminate\Session\Middleware\StartSession::class,
-    \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-    \App\Http\Middleware\CheckBabinsa::class,
-    \App\Http\Middleware\VerifyCsrfToken::class,
-    \Illuminate\Routing\Middleware\SubstituteBindings::class,
-],
-
->>>>>>> 5090c0447caae7f45ee8ac1ff39bfcedcf2ce4a7
 
         'api' => [
             // \Laravel\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful::class,
@@ -71,11 +59,7 @@ class Kernel extends HttpKernel
         //      'kodim' =>  \App\Http\Middleware\KodimMiddleware::class,
         //      'koranmil' => \App\Http\Middleware\KoranmilMiddleware::class,
         // 'babinsa' => \App\Http\Middleware\BabinsaMiddleware::class,
-<<<<<<< HEAD
          'check_babinsa' => \App\Http\Middleware\CheckBabinsa::class,
-=======
-        'check_babinsa' => \App\Http\Middleware\CheckBabinsa::class,
->>>>>>> 5090c0447caae7f45ee8ac1ff39bfcedcf2ce4a7
         'auth' => \App\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.session' => \Illuminate\Session\Middleware\AuthenticateSession::class,
